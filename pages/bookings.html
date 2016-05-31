@@ -21,6 +21,9 @@
 			.navBar {
 				width: 100%;
 			}
+			.bookingContainer {
+				background-color: rgba(255,255,255,0.4);
+			}
 		</style>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,16 +51,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-
-    <script>
-
-    $(window).bind('load', function(){
-    var bookingHead = $(".bookingContainer iframe").contents().find("head");                
-		bookingHead.append($("<link/>", { rel: "stylesheet", href: "bookings.css", type: "text/css" }));
-    	
-    })
-
-	</script>
 
   </body>
 </html>
