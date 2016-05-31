@@ -54,6 +54,15 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script> 
 
     <script>
+    	$(function() {
+    		var result = $.ajax({
+				url: "//brewing.simplybook.me/iframe/pm_loader_v2.php",
+				type: "GET"
+				})
+			.done(function(result){
+				console.log(result)
+			})
+    	})
     	$(window).bind('load', function() {
     		var bookingFrame = $('.bookingContainer ifram').contents().find('head')
     		console.log(bookingFrame)
