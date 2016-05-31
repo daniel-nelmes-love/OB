@@ -53,5 +53,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script> 
 
+    <script>
+    	$(window).bind('load', function() {
+    		var bookingFrame = $('.bookingContainer ifram').contents().find('head')
+    		console.log(bookingFrame)
+    	})
+    </script>
+
   </body>
 </html>
