@@ -43,7 +43,7 @@
     		<div class="row">
     			<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 bookingContainer">
 
-    				<script type="text/javascript" src="//brewing.simplybook.me/iframe/pm_loader_v2.php?width=960&url=//brewing.simplybook.me&theme=webfactory_iron&layout=webfactory&timeline=modern&mode=auto&mobile_redirect=0"></script>
+    				<script type="text/javascript" src="//brewing.simplybook.me/iframe/pm_loader_v2.php?width=960&amp;url=//brewing.simplybook.me&amp;theme=webfactory_iron&amp;layout=webfactory&amp;timeline=modern&amp;mode=auto&amp;mobile_redirect=0"></script>
     				
     			</div>
     		</div>
@@ -53,12 +53,24 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script> 
 
-    <script>
-    	// $(window).bind('load', function() {
-    	// 	var bookingFrame = $('.bookingContainer iframe').contents()
-    	// 	console.log(bookingFrame)
-    	// })
-    </script>
+   <script type="text/javascript" src="//brewing.simplybook.me/common/js/widget_loader.js"></script>
+<script type="text/javascript">
+DoReserve_Widget.server = "brewing.simplybook.me";
+DoReserve_Widget.domain = "simplybook.me";
+DoReserve_Widget.mobileRedirect = 0;
+DoReserve_Widget.layout = "cleanside";
+DoReserve_Widget.color_scheme = "clean_slide_blue";
+DoReserve_Widget.timeline = "modern_week";
+DoReserve_Widget.mode = "auto";
+DoReserve_Widget.simplybook_iframe_src = "//brewing.simplybook.me/sheduler/manage/?frameId=1&preview=1&type=widgetv2&width=960&url=brewing.simplybook.me&theme=clean_slide_blue&layout=cleanside&timeline=modern_week&mobile_redirect=0&mode=auto";
+DoReserve_Widget.predefinedSteps = {};
+DoReserve_Widget.offset = "30%";
+DoReserve_Widget.title = "Book now";
+DoReserve_Widget.position = "right";
+DoReserve_Widget.color = "#ffffff";
+DoReserve_Widget.background = "#3290f1";
+DoReserve_Widget.addSimplybookButton();
+</script>
 
   </body>
 </html>
