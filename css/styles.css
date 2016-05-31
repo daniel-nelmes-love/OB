@@ -1,0 +1,52 @@
+/*extra styles beyond bootstrap - always put this file below bootstrap in the header*/
+
+.container-fluid { 
+	/*padding:0;*/
+	/*margin-bottom: 50px;*/
+}
+
+.carousel-indicators li {
+	opacity: 0.1;
+}
+
+.links {
+	background-color: transparent;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*.links:hover {
+	background-color: rgba(0,0,0,0.10);
+}*/
+
+.links p {
+	color: #e6e6e6;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: relative;
+	margin-top: 45%;
+}
+
+.logo { padding-top: 10%; }
+
+a:hover { 
+	text-decoration: none; 
+}
+
+.col-xs-12, .col-sm-2 { 
+	padding:0;
+}
+
+.footer {
+	background-color: #F0EEE5;
+}
+
+.footer p {
+	font-size: 1rem;
+	color: white;
+}
+
+.col-sm-2 { width: 12%!important; }

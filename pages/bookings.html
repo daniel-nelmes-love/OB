@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Occasional Brewer | Bookings</title>
+
+		<!-- Bootstrap -->
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/styles.css" rel="stylesheet">
+		<style>
+			body { 
+				background: url(../images/iStock_000086453889_Medium.png) no-repeat top center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			.navBar {
+				width: 100%;
+			}
+		</style>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<iframe class="navBar" src="navBar.html" frameborder="0"></iframe>
+    		</div>
+    	</div>
+    	<div class="container-fluid bookingContainer">
+    		<div class="row">
+    			<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+    				<script type="text/javascript" src="http://danlovetest01.simplybook.me/iframe/pm_loader_v2.php?width=960&url=http://danlovetest01.simplybook.me&theme=bootstrap__square_rainbow__colored_light&layout=bootstrap__square_rainbo&timeline=modern_week&mode=auto&mobile_redirect=0"></script>
+    				
+    			</div>
+    		</div>
+    	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+
+    $(window).bind('load', function(){
+    var bookingHead = $(".bookingContainer iframe").contents().find("head");                
+		bookingHead.append($("<link/>", { rel: "stylesheet", href: "bookings.css", type: "text/css" }));
+    	
+    })
+
+	</script>
+
+  </body>
+</html>
