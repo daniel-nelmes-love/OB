@@ -1,3 +1,123 @@
-.bookingContainer {
-	background-color: rgba(0,0,0,0.8);
+																																																																																																																																																																																										
+
+
+.iframe {
+	background-color: rgba(0,0,0,0.4)!important;
+}
+
+#timeline {
+	height: 560px!important;
+	padding-bottom: 0!important;
+}
+
+#timeline #step_title, 
+#timeline #unit_step .unit-title {
+	color: rgba(255,255,255,1);
+}
+#timeline #unit_step .unit-description,
+#timeline #client_info_step .form-title,
+#timeline #client_info_step #phone_description,
+#timeline #client_info_step .license:not(a),
+#timeline #info span,
+#timeline #info .selected-unit-container .title:after {
+	color: rgba(255,255,255,0.8);
+}
+
+#timeline #unit_step .unit-title {
+	height: 3em;
+}
+
+#timeline #unit_step .item {
+	width: 40%;
+	padding: 15px 5% 10px 5%;
+	float: left;
+}
+
+#timeline #info .selected-unit-container .title {
+color: rgba(0,0,0,0)!important;
+position: relative;
+}
+
+#timeline #info .selected-unit-container .title:after {
+	content: "Chosen brew:";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#timeline #unit_step .unit-info {
+	position: relative;
+	overflow: initial;
+}
+
+#timeline #unit_step .unit-info .unit-description {
+	margin-left: 100px;
+}
+
+#timeline #unit_step .unit-info .button {
+	width: 80px;
+	margin-top: -37px;
+	margin-bottom: 10px;
+}
+
+#timeline #date_time_step:not(.hidden),
+#timeline #date_time_step .time_select{
+	width: initial;
+	display: inline-block!important;
+}
+
+#timeline #date_time_step {
+	overflow: initial;
+}
+
+#timeline #date_time_step .date_time_container {
+	position: relative;
+	overflow: initial;
+}
+
+#timeline #date_time_step #time_matrix {
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: -87px;
+}
+
+#timeline #date_time_step #time_matrix .time-select-item {
+	float: initial;
+}
+
+#timeline #info {
+	margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#timeline #navigation .back-button {
+	padding-left: 0;
+}
+
+#timeline #navigation .back-button {
+	width: 100px;
+	padding: 10px 0;
+	margin: 10px 0;
+	color: rgba(255,255,255,0.8);
+}
+#timeline #navigation .back-button:hover {
+	color: rgba(255,255,255,1);
+}
+#timeline .loader {
+	top: 240px;
+	left: 330px;
+}
+					
+.company-time,
+.selected-event-container {
+	display: none!important;
+}				
+
+#timeline #info .time {
+	background: none;
 }
